@@ -18,6 +18,7 @@ public class HostilePortalHandler : MonoBehaviour
         StartCoroutine(spawnHostiles());
         IEnumerator spawnHostiles()
         {
+            yield return new WaitForSeconds(6);
             while (true)
             {
                 Instantiate(hostileUnit, transform.position, Quaternion.identity).GetComponent<Rigidbody2D>();
