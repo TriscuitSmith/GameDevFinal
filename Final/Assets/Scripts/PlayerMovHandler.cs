@@ -48,9 +48,9 @@ public class playerMovementHandler : MonoBehaviour
         
         //if (true)
         //{
-        Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
-        transform.RotateAround(player.transform.position, Vector3.up, pos.x);
-        transform.RotateAround(player.transform.position, Vector3.right, -pos.y);
+        //Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        //transform.RotateAround(player.transform.position, Vector3.up, pos.x);
+        //transform.RotateAround(player.transform.position, Vector3.right, -pos.y);
 
         //}
     }
