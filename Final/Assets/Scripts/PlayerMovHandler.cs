@@ -54,11 +54,4 @@ public class playerMovementHandler : MonoBehaviour
 
         //}
     }
-
-    void getInput()
-    {
-
-
-    }
-
 }
