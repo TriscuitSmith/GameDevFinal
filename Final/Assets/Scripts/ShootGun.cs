@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShootGun : MonoBehaviour
 {
-    [SerializeField] private GameObject laser;a
+    [SerializeField] private GameObject laser;
 
     // Update is called once per frame
     void Update()
