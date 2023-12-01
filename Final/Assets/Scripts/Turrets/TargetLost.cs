@@ -16,7 +16,7 @@ public class TargetLost : TurretState
 
         if (other.CompareTag("Hostile") && setFlag == true)
         {
-            //Debug.Log("Fire!");
+            
             //GetComponent<AudioSource>().Play();
             //Instantiate(laser, transform.position, Quaternion.identity);
             parent.Fire();

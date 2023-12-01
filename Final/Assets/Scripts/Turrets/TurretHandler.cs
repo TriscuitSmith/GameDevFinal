@@ -43,7 +43,6 @@ public class TurretHandler : MonoBehaviour
             yield return new WaitForSeconds(2);
             yield return null;
 
-            Debug.Log("FIRE");
             GetComponent<AudioSource>().Play();
             Instantiate(laser, transform.position, Quaternion.identity);
         }

@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class HostileMove : MonoBehaviour
 {
@@ -23,11 +25,21 @@ public class HostileMove : MonoBehaviour
     {
         if (other.gameObject.CompareTag("FriendlyPortal"))
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
             Destroy(this.gameObject);
+            SceneManager.LoadScene("LossScreen");
         }
         if (other.gameObject.CompareTag("Projectile"))
         {
             Destroy(this.gameObject);
+        }
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+            Destroy(this.gameObject);
+            SceneManager.LoadScene("LossScreen");
         }
     }
 }

@@ -31,5 +31,13 @@ public class LaserMove : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+        if (other.gameObject.CompareTag("Wall"))
+        {
+            Destroy(this.gameObject);
+        }
+        /*else if (other)
+        {
+            Destroy(this.gameObject);
+        }*/
     }
 }
